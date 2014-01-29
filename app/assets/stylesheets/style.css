@@ -1,0 +1,7 @@
+.bgimg {
+      background: url('http://www.travelinggreener.com/wp-content/uploads/UteDeckerRecycledSilverBracelets-1024x768.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}

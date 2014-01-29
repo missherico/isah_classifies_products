@@ -1,1 +1,17 @@
 <h1> EDIT THIS PRODUCT </h1>
+<h2> <%= @product.name %> </h2>
+
+<%= form_for @product do |p| %>
+<br>
+NAME: <%= p.text_field :name %>
+<br>
+PRICE: <%= p.number_field :price %>
+<br>
+DESCRIPTION: <%= p.text_field :description %>
+<div>
+<ul>
+<%= collection_check_boxes :product, :category_ids, @all_categories, :id, :name %>
+</ul>
+</div>
+<%= p.submit %>
+<% end %>

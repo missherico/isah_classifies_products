@@ -8,6 +8,20 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= boostrap.min
+ *= require style.css
  *= require_self
  *= require_tree .
  */
+
+.bgimg {
+      background: url('http://imagesgonerogue.com/preview/01/china1.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.transparentdiv{
+  background: rgba(255,255,255, 0.8);
+}
