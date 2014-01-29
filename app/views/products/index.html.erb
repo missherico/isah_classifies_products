@@ -1,1 +1,18 @@
 <h1>ALL OF OUR PRODUCTS</h1>
+
+<table>
+  <% @products.each do |p| %>
+  <tr>
+  	<td>
+  	<%= p.price %>
+    </td>
+  	<td>
+  	&nbsp;&nbsp;<%= p.name %>
+    </td>
+    <td>
+    &nbsp;&nbsp;<%= p.description %>
+    </td>
+  </tr>
+  <% end %>
+
+</table>

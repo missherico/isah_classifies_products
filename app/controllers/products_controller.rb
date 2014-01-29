@@ -5,11 +5,12 @@ class ProductsController < ApplicationController
   end
 
   def new
-  	id = params[:id]
-  	@product = Product.find_by(id)
+
   end
 
   def show
+  	id = params[:id]
+  	@product = Product.find_by(id)
   end
 
   def edit
