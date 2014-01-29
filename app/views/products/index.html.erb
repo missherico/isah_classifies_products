@@ -10,7 +10,7 @@
   	<%= p.price %>
     </td>
   	<td>
-  	&nbsp;&nbsp;<%= p.name %>
+  	&nbsp;&nbsp;<%= link_to p.name, product_path(p) %>
     </td>
     <td>
     &nbsp;&nbsp;<%= p.description %>

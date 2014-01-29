@@ -15,6 +15,10 @@ class ProductsController < ApplicationController
   end
 
   def edit
+  	id = params[:id]
+  	@product = Product.find_by(id)
+  	@categories = @product.categories
+
   end
 
   def update

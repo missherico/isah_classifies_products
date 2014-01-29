@@ -26,6 +26,13 @@ categories << Category.create(name: "gold")
 categories << Category.create(name: "silver")
 categories << Category.create(name: "accessories")
 
+categories[0].products << products[0]
+categories[0].products << products[1]
+categories[0].products << products[3]
+
+categories[5].products << products[-4]
+
+
 
 
 
