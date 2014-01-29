@@ -7,7 +7,7 @@
   	<%= c.id %>&nbsp;&nbsp;
   	</td>
   	<td>
-  	<%= c.name %>
+  	<%= link_to c.name, category_path(c) %>
     </td>
   </tr>
   <% end %>
