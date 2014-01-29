@@ -1,1 +1,15 @@
 <h1> Product CATEGORIES </h1>
+
+<table>
+  <% @categories.each do |c| %>
+  <tr>
+  	<td>
+  	<%= c.id %>&nbsp;&nbsp;
+  	</td>
+  	<td>
+  	<%= c.name %>
+    </td>
+  </tr>
+  <% end %>
+
+</table>
